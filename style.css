@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Ubuntu Mono", monospace;
+  background-color: rgb(246, 246, 246);
+}
+h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+a {
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+}
+span {
+  text-transform: uppercase;
+}
+button {
+  cursor: pointer;
+}
+img {
+    max-width: 100%;
+}
+.hamburger-menu {
+  display: none;
+}
+.color-1 {
+  background-color: rgb(255, 84, 68);
+}
+.color-2 {
+  background-color: rgb(170, 45, 182);
+}
+.color-3 {
+  background-color: rgb(30, 194, 164);
+}
+.color-4 {
+  background-color: rgb(39, 139, 224);
+}
+/*---------------------Landing page 1-------------------------*/
+.landing-page {
+  height: 100vh;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background-color: #fff;
+}
+.nav-menu ul {
+  list-style-type: none;
+  display: flex;
+}
+.nav-menu ul li {
+  padding: 0px 8px;
+}
+.list-item {
+  position: relative;
+}
+.dropdown {
+  box-shadow: 0px 1px 5px 1px rgba(50, 50, 50, 0.3);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+  position: absolute;
+  visibility: hidden;
+}
+.list-item:hover .dropdown {
+  visibility: visible;
+}
+.dropdown p {
+  padding: 5px;
+}
+.landing-page-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+}
+.inner-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+.inner-wrap button {
+  background-color: rgb(45, 45, 45);
+  border: none;
+  color: #fff;
+  padding: 20px 40px;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-top: 25px;
+}
+/*---------------------------Landing Page 2---------------------*/
+.landing-page-2 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.box {
+  padding: 40px 80px;
+  color: #fff;
+  border-radius: 5px;
+  margin: 0px 15px;
+  text-align: center;
+  box-shadow: 0px 2px 7px 2px rgba(50, 50, 50, 0.3);
+  max-width: 240px;
+  max-height: 136px;
+}
+.background-wrapper {
+  background-color: #fff;
+  flex-basis: 50%;
+}
+.part-2 {
+  visibility: hidden;
+}
+.part-2 > * {
+  visibility: visible;
+}
+.part-2 > * {
+  transition: opacity 150ms linear 100ms, transform 150ms ease-in-out 100ms;
+}
+.part-2:hover > * {
+  opacity: 0.4;
+  transform: scale(0.9);
+}
+.part-2 > *:hover {
+  opacity: 1;
+  transform: scale(1);
+  transition-delay: 0ms, 0ms;
+}
+.demo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-basis: 50%;
+  line-height: 70px;
+}
+.demo-menu button {
+  background-color: rgb(216, 214, 214);
+  border: none;
+  box-shadow: 0px 1px 5px 1px rgba(50, 50, 50, 0.3);
+  color: black;
+  padding: 8px 35px;
+  border-radius: 2px;
+}
+.demo-menu button:hover {
+  background-color: rgb(45, 45, 45);
+  color: #fff;
+  cursor: pointer;
+}
+#special {
+  background-color: black;
+  color: #fff;
+}
+/*---------------------Landing Page 3--------------------------*/
+.landing-page-3 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper-2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 80%;
+}
+.img-wrap {
+  padding: 20px 20px;
+}
+.img-wrap:hover {
+  cursor: pointer;
+}
+.img-wrap img {
+  box-shadow: 0px 1px 5px 1px rgba(50, 50, 50, 0.3);
+}
+.img-wrap img:hover {
+  border: 1px solid black;
+}
+/*-----------------------Codepreneurs feature------------------------*/
+.codepreneurs-feature {
+  padding: 50px 20px;
+  background-color: #fff;
+}
+.codepreneurs-header {
+  text-align: center;
+  line-height: 50px;
+  padding: 50px 20px;
+}
+.codepreneurs-content {
+  display: flex;
+  max-width: 80%;
+  margin: auto;
+  padding: 50px 20px;
+}
+.content {
+  line-height: 40px;
+  flex-basis: 33.33%;
+}
+/*---------------------------Social Media-----------------------------*/
+.social-media {
+  background-color: #464646;
+  color: #fff;
+  text-align: center;
+  margin: auto;
+  padding: 50px 20px;
+  line-height: 60px;
+}
+.social-media-content {
+  padding: 20px 20px;
+}
+.icons i {
+  padding: 0px 8px;
+}
+.icons i:hover {
+    color: rgb(45, 45, 45);
+}
+/*----------------------------Footer--------------------------*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: #fff;
+  padding: 30px 20px;
+}
+.footer-1 a {
+  color: #fff;
+}
+/*---------------------------Media Query's---------------------*/
+@media only screen and (max-device-width: 480px) {
+  nav {
+    padding: 15px 15px;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+  .inner-wrap {
+    width: 50%;
+    line-height: 30px;
+    text-align: center;
+  }
+  .inner-wrap h1 {
+    padding: 15px 0px;
+  }
+  .inner-wrap p {
+    font-weight: bold;
+    padding: 15px 0px;
+  }
+  .inner-wrap button {
+    padding: 15px 30px;
+  }
+  #banners {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .box {
+    margin: 20px 0px;
+  }
+ .demo-section {
+    padding: 60px 0px;
+ }
+  .demo-menu {
+    width: 80%;
+    text-align: center;
+    line-height: 50px;
+  }
+  .demo-menu button {
+    padding: 8px 25px;
+  }
+  .landing-page-3 {
+    height: auto;
+    margin: 260px auto 200px auto;
+    display: flex;
+    align-items: center;
+  }
+  .wrapper-2 {
+    flex-direction: column;
+  }
+  .img-wrap {
+    padding: 10px 0px;
+  }
+  .codepreneurs-header p {
+    line-height: 30px;
+  }
+  .codepreneurs-content > :last-child {
+    display: none;
+  }
+  .content {
+    flex-basis: 50%;
+    padding: 10px;
+  }
+  .social-media-content h2 {
+    font-size: 30px;
+  }
+  footer {
+    font-size: 11px;
+  }
+}
